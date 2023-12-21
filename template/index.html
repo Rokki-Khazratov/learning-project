@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in prodcuts %}
+    <h1>{{i.name}}</h1>
+    <h3>{{i.price}}</h3>
+    {% endfor %}
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% for i in products %}
+    <h2>{{i.name}}</h2>
+    {% endfor %}
+
+    {% for i in filter_product %}
+    <h3>Filter : {{i.name}} </h3>
+    {% endfor %}
+
+    <h1>Ordered by -price : </h1>
+    {% for i in products_ordered_by_price %}
+    <h3>{{i.name}} : {{i.price}} </h3>
+    {% endfor %}
+</body>
+
+</html>
