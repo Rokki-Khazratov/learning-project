@@ -9,6 +9,7 @@ def index(request):
         'products' : products,
         'filter_product' : filter_product,
         'products_ordered_by_price' : products_ordered_by_price,
+        #git test
     }
     return render(request,'index.html',context)
 
