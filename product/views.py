@@ -13,4 +13,9 @@ def index(request):
     }
     return render(request,'index.html',context)
 
-    
+def product_detail(request,product_id):
+    product = Product.objects.filter(id = product_id)
+    context = {
+        'product':product
+    }
+    return render(request,'product_detial.html',context)

@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product</title>
 </head>
-
 <body>
-<h1>All prodcuts:</h1>
-    {% for i in products %}
-    <a href="{% url 'prodcut_detail' i.id %}"><h3>{{i.name}}</h3></a>
-    {% endfor %}
-
+    {% for i in product %}
+    <h1>{{i.name}}</h1>
+    <p>{{i.price}}</p>
+    {%endfor%}
 </body>
-
 </html>
